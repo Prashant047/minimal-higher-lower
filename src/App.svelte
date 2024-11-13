@@ -63,6 +63,7 @@
     if (right.count >= left.count) {
       correct();
     } else {
+      showActual = true;
       isCorrect = -1;
     }
   };
@@ -71,6 +72,7 @@
     if (right.count <= left.count) {
       correct();
     } else {
+      showActual = true;
       isCorrect = -1;
     }
   };
@@ -157,7 +159,7 @@
       </div>
     </div>
     <div
-      class={`h-2 transition-all bg-red-300 ${showActual ? "w-full duration-[3000ms]" : "w-0 duration-[0ms]"}`}
+      class={`h-2 transition-all bg-red-300 ${isCorrect === 1? "w-full duration-[3000ms]" : "w-0 duration-[0ms]"}`}
     ></div>
     {#if isCorrect === -1}
       <div class="text-center">
