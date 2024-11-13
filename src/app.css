@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-900;
+  }
+}
+
+.teko-font {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
